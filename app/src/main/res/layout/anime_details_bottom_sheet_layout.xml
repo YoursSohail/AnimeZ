@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/knowMoreText"
+        android:text="Know more"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@id/pgRating"
+        app:layout_constraintStart_toStartOf="@id/pgRating"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="130dp"
+        android:layout_height="180dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/image"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Naruto" />
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/yellow"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/name"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        tools:text="7.3" />
+
+    <TextView
+        android:id="@+id/dates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/rating"
+        app:layout_constraintTop_toBottomOf="@id/rating"
+        tools:text="2003-2004" />
+
+    <TextView
+        android:id="@+id/episodes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/dates"
+        app:layout_constraintTop_toBottomOf="@id/dates"
+        tools:text="220" />
+
+    <TextView
+        android:id="@+id/pgRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/episodes"
+        app:layout_constraintTop_toBottomOf="@id/episodes"
+        tools:text="PG-13" />
+
+    <TextView
+        android:id="@+id/synopsis"
+        android:textSize="16sp"
+        android:padding="8dp"
+        tools:text="Moments prior to Naruto Uzumaki\'s birth, a huge demon known as the Kyuubi, the Nine-Tailed Fox, attacked Konohagakure, the Hidden Leaf Village, and wreaked havoc. In order to put an end to the Kyuubi'..."
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
